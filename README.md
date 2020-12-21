@@ -7,12 +7,12 @@ These principles enable you to write most reusable & clean Java code in your pro
 
 SOLID Principles which are:
 
-Single Responsibility Principle
+1. Single Responsibility Principle
 
-Open-Closed Principle
+2. Open-Closed Principle
 
-Liskov Substitution Principle
+3. Liskov Substitution Principle
 
-Interface Segregation Principle
+4. Interface Segregation Principle
 
-Dependency Inversion Principle
+5. Dependency Inversion Principle
