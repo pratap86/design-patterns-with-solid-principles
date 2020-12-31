@@ -1,22 +1,31 @@
 # design-patterns-with-solid-principles
 A master guide to gang of four design patterns &amp; SOLID design principles using Java.
-
+<p>
 What are SOLID Design Principles?
 
 These principles enable you to write most reusable & clean Java code in your projects.
 
 SOLID Principles which are:
 
-1.1 Single Responsibility Principle
+1.1 Single Responsibility Principle - There should never be more than one reason for a class to change.
 
-1.2 Open-Closed Principle
+1.2 Open-Closed Principle - Software entities(classes, modules, methods etc) should be open for extension, but closed for modification.
 
-1.3 Liskov Substitution Principle
+<b>Open for Extension -> Extends existing behaviour
 
-1.4 Interface Segregation Principle
+Closed for Modification -> Existing code remains unchanged</b>
+
+1.3 Liskov Substitution Principle - We should be to substitute base class object with child class objects & this should not alter the behaviour/characterirstics of program. 
+
+1.4 Interface Segregation Principle - Clients should not be forced to depend upon Interfaces that they do not use(Interface Pollution).
+
+<b>write highly cohesive interfaces</b>
 
 1.5 Dependency Inversion Principle
 
+<p>A. High level modules should not depend on low level modules, both should depend on Abstractions.</p>
+<p>B. Abstractions should not depend upon details, details should depend upon abstraction.</p>
+</p>
 Creational Design Patterns: 
 
 2.1 Simple Factory
