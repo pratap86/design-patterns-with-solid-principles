@@ -5,7 +5,7 @@ What are SOLID Design Principles?
 
 These principles enable you to write most reusable & clean Java code in your projects.
 
-SOLID Principles which are:
+<b>SOLID Principles</b> which are:
 
 1.1 Single Responsibility Principle - There should never be more than one reason for a class to change.
 
@@ -26,7 +26,7 @@ Closed for Modification -> Existing code remains unchanged</b>
 <p>A. High level modules should not depend on low level modules, both should depend on Abstractions.</p>
 <p>B. Abstractions should not depend upon details, details should depend upon abstraction.</p>
 </p>
-Creational Design Patterns: 
+<b>Creational Design Patterns:</b> 
 
 2.1 Simple Factory
 
@@ -42,7 +42,7 @@ Creational Design Patterns:
 
 2.7 Object Pool
 
-Structural Design Patterns: 
+<b>Structural Design Patterns:</b> 
 
 3.1 Object & Class Adapters
 
@@ -58,7 +58,7 @@ Structural Design Patterns:
 
 3.7 Composite  
 
-Behavioral Design Patterns: 
+<b>Behavioral Design Patterns:</b>
 
 4.1 Chain of Responsibility
 
