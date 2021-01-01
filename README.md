@@ -36,7 +36,10 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 2.4Singleton
 
-2.5 Builder
+2.5 Builder: <b>what problem builder design patterns solve?</b>
+
+* class constructor requires lot of information.
+* In builder, we remove the logic related to object construction from "client" code & abstract it in to separate classes.
 
 2.6 Prototype
 
