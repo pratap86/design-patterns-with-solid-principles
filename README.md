@@ -40,8 +40,11 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 * class constructor requires lot of information.
 * In builder, we remove the logic related to object construction from "client" code & abstract it in to separate classes.
+* ex. java.util.Calender.Builder
+* compare & contrast with <b>Prototype</b>
+* method chaining used in Builder pattern
 
-2.6 Prototype
+2.6 <b>Prototype :</b>we have a complex object that is costly to create. To create more instances of such class, we use an existing instanse as our prototype. 
 
 2.7 Object Pool
 
