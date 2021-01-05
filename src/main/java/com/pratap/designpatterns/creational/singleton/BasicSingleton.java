@@ -1,6 +1,10 @@
 package com.pratap.designpatterns.creational.singleton;
 
-public class BasicSingleton {
+import java.io.Serializable;
+
+public class BasicSingleton implements Serializable {
+
+	private static final long serialVersionUID = 6324747369628151625L;
 
 	private BasicSingleton() {}
 	
@@ -18,5 +22,9 @@ public class BasicSingleton {
 
 	public void setValue(int value) {
 		this.value = value;
+	}
+	
+	protected Object readResolve() {
+		return INSTANCE;
 	}
 }
