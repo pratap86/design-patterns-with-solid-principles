@@ -61,8 +61,9 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 3.4 Facade
 
-3.5 Static & Dynamic Proxy
-
+3.5 <b>Proxy Design Pattern</b>
+  - An interface for accessing a perticular resource.
+  - Same interface, entirely different behaviour.
 3.6 Flyweight
 
 3.7 Composite  
