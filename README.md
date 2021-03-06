@@ -55,44 +55,47 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 ### Structural Design Patterns 
 
-3.1 Object & Class Adapters
+* Object & Class Adapters
 
-3.2 Decorator
+* Decorator
 
-3.3 Bridge
+* Bridge
 
-3.4 Facade
-  - 
+* Facade
+  - use when working with legacy system
+  - Client has to intract with a large number of interfaces & classes in a subsystem to get result. So client gets tightly coupled with those interfaces & classes. Facade solve this problems.
+  - Facade provides a simple & unified interface to a subsystem. Cleint interacts with just the facade now to get the same result.
+  - Facade is not just a one to one method forwarding to other classes.
 
-3.5 <b>Proxy Design Pattern</b>
+* Proxy Design Pattern
   - An interface for accessing a perticular resource.
   - Same interface, entirely different behaviour.
-3.6 Flyweight
+* Flyweight
 
-3.7 Composite  
+* Composite  
 
 <b>Behavioral Design Patterns:</b>
 
-4.1 Chain of Responsibility
+* Chain of Responsibility
 
-4.2 Command
+* Command
 
-4.3 Interpreter
+* Interpreter
 
-4.4 Mediator
+* Mediator
 
-4.5 Iterator
+* Iterator
 
-4.6 Memento
+* Memento
 
-4.7 Observer
+* Observer
 
-4.8 State
+* State
 
-4.9 Strategy
+* Strategy
 
-4.10 Template Method
+* Template Method
 
-4.11 Visitor
+* Visitor
 
-4.12 Null Object
+* Null Object
