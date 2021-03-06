@@ -1,11 +1,12 @@
-# design-patterns-with-solid-principles
+# Design Patterns with Solid Principles
+
 A master guide to gang of four design patterns &amp; SOLID design principles using Java.
 <p>
 What are SOLID Design Principles?
 
 These principles enable you to write most reusable & clean Java code in your projects.
 
-<b>SOLID Principles</b> which are:
+### SOLID Principles which are:
 
 1.1 Single Responsibility Principle - There should never be more than one reason for a class to change.
 
@@ -26,7 +27,8 @@ Closed for Modification -> Existing code remains unchanged</b>
 <p>A. High level modules should not depend on low level modules, both should depend on Abstractions.</p>
 <p>B. Abstractions should not depend upon details, details should depend upon abstraction.</p>
 </p>
-<b>Creational Design Patterns:</b> 
+
+### Creational Design Patterns
 
 2.1 Simple Factory
 
@@ -51,7 +53,7 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 2.7 Object Pool
 
-<b>Structural Design Patterns:</b> 
+### Structural Design Patterns 
 
 3.1 Object & Class Adapters
 
@@ -60,6 +62,7 @@ Closed for Modification -> Existing code remains unchanged</b>
 3.3 Bridge
 
 3.4 Facade
+  - 
 
 3.5 <b>Proxy Design Pattern</b>
   - An interface for accessing a perticular resource.
