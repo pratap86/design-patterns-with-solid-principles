@@ -55,7 +55,15 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 ### Structural Design Patterns 
 
-* Object & Class Adapters
+* ObjectAdapter & Class Adapter(What is Adapter?)
+
+  - We have an existing object which provides the functionality that client needs. But client code can't use this object because it expects an object with different interface.
+  - Using Adapter design pattern we make this existing object work with client by adapting the object to client's expected interface.
+  - Adapter aka Wrapper as it "wraps" existing object.
+  - use Inheritance & composition to implement Adapter
+  - Examples;
+    - java.io.InputStreamReader & java.io.OutputStreamWriter
+    - These classes adapt existing InputStream/OutputStream object to a Reader/Writer interface.
 
 * Decorator
 
@@ -66,6 +74,7 @@ Closed for Modification -> Existing code remains unchanged</b>
   - Client has to intract with a large number of interfaces & classes in a subsystem to get result. So client gets tightly coupled with those interfaces & classes. Facade solve this problems.
   - Facade provides a simple & unified interface to a subsystem. Cleint interacts with just the facade now to get the same result.
   - Facade is not just a one to one method forwarding to other classes.
+  - The java.net.URL class is a great example of facade. This class provides a simple method called as openStream() & we get an input stream to the resource pointed at by the URL object. 
 
 * Proxy Design Pattern
   - An interface for accessing a perticular resource.
