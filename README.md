@@ -67,6 +67,22 @@ Closed for Modification -> Existing code remains unchanged</b>
 
 * Decorator
 
+  - When we want to enhance behaviour of our existing object dynamically as and when required then we can use decorator design pattern.
+  - Decorator wraps an object within itself and provides same interface as the wrapped object. So the client of original object dosen't need to change.
+  - A decorator provides alternative to subclassing for extending functionality of existing classes.
+  - Support recursive composition
+  - Decorators are more flexible & powerful than inheritance. Inheritance is static by definition but decorators allow you to dynamically compose behaviour using object at runtime.
+  - Examples : Classes in Java's I/O packages are great example of decorator pattern.
+    - java.io.BufferedOutputStream class decorates any java.io.OutputStream object and add buffering to file writing operation. This improves the disk i/o performance by reducing the number of writes.
+
+```ruby
+try(OutputStream os = new BuffuredOutputStream("xyz.txt"))){
+  os.write('x');
+  os.flush();
+}
+```
+    
+
 * Bridge
 
 * Facade
