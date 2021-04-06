@@ -62,7 +62,7 @@ protected Object readResolve(){
 
 ### Structural Design Patterns 
 
-* ObjectAdapter & Class Adapter(What is Adapter?)
+#### ObjectAdapter & Class Adapter(What is Adapter?)
 
   - We have an existing object which provides the functionality that client needs. But client code can't use this object because it expects an object with different interface.
   - Using Adapter design pattern we make this existing object work with client by adapting the object to client's expected interface.
@@ -72,7 +72,7 @@ protected Object readResolve(){
     - java.io.InputStreamReader & java.io.OutputStreamWriter
     - These classes adapt existing InputStream/OutputStream object to a Reader/Writer interface.
 
-* Decorator
+#### Decorator
 
   - When we want to enhance behaviour of our existing object dynamically as and when required then we can use decorator design pattern.
   - Decorator wraps an object within itself and provides same interface as the wrapped object. So the client of original object dosen't need to change.
@@ -90,44 +90,53 @@ try(OutputStream os = new BuffuredOutputStream("xyz.txt"))){
 ```
     
 
-* Bridge
+#### Bridge
 
-* Facade
+#### Facade
   - use when working with legacy system
   - Client has to intract with a large number of interfaces & classes in a subsystem to get result. So client gets tightly coupled with those interfaces & classes. Facade solve this problems.
   - Facade provides a simple & unified interface to a subsystem. Cleint interacts with just the facade now to get the same result.
   - Facade is not just a one to one method forwarding to other classes.
   - The java.net.URL class is a great example of facade. This class provides a simple method called as openStream() & we get an input stream to the resource pointed at by the URL object. 
 
-* Proxy Design Pattern
-  - An interface for accessing a perticular resource.
-  - Same interface, entirely different behaviour.
-* Flyweight
+#### Proxy Design Pattern
+  - What is a Proxy?
+    - we need to provide a placeholder or surrogate to another object
+    - Proxy acts on behalf of the object and is used for lots of reasons some of the main reasons are;
+      - Protection Proxy - Control access to original object's operations
+      - Remote Proxy - Provides a local representation of a remote object
+      - Virtual Proxy - Delay construction of original object until obsolutely necessary
+    - Cleint is unaware of existance of proxy. Proxy performs its work transparently.
+    - Proxy Examples;
+      - Lazy loading of collections by Hibernate
+      - APO based method level security
+      - RMI/web service stubs 
+#### Flyweight
 
-* Composite  
+#### Composite  
 
 <b>Behavioral Design Patterns:</b>
 
-* Chain of Responsibility
+#### Chain of Responsibility
 
-* Command
+#### Command
 
-* Interpreter
+#### Interpreter
 
-* Mediator
+#### Mediator
 
-* Iterator
+#### Iterator
 
-* Memento
+#### Memento
 
-* Observer
+#### Observer
 
-* State
+#### State
 
-* Strategy
+#### Strategy
 
-* Template Method
+#### Template Method
 
-* Visitor
+#### Visitor
 
-* Null Object
+#### Null Object
