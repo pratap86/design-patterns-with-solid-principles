@@ -115,7 +115,7 @@ try(OutputStream os = new BuffuredOutputStream("xyz.txt"))){
 
 #### Composite  
 
-<b>Behavioral Design Patterns:</b>
+### Behavioral Design Patterns
 
 #### Chain of Responsibility
 
