@@ -15,17 +15,17 @@ public abstract class Employee implements LeaveApprover {
 
 	@Override
 	public void processLeaveApplication(LeaveApplication application) {
-
+		// continuously iterate in each concrete handler until & unless found a concrete handler
 		if(!processRequest(application) && successor != null) {
 			successor.processLeaveApplication(application);
 		}
 	}
 
-	protected abstract boolean processRequest(LeaveApplication application);
-	
 	@Override
 	public String getApprovalRole() {
 		return role;
 	}
+	
+	protected abstract boolean processRequest(LeaveApplication application);
 
 }
