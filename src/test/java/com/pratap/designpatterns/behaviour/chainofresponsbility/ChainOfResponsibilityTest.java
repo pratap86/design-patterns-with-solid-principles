@@ -29,7 +29,7 @@ class ChainOfResponsibilityTest {
 		
 		LeaveApprover approver = createChain();
 		System.out.println(application);
-		approver.processLeaveApplication(application);
+		approver.processRequest(application);
 		assertEquals("SICK leave for 10 day(s) APPROVED by Manager", application.toString());
 	}
 	
@@ -44,7 +44,7 @@ class ChainOfResponsibilityTest {
 		
 		LeaveApprover approver = createChain();
 		System.out.println(application);
-		approver.processLeaveApplication(application);
+		approver.processRequest(application);
 		System.out.println(application);
 		assertEquals("PTO leave for 5 day(s) APPROVED by Manager", application.toString());
 	}
@@ -60,7 +60,7 @@ class ChainOfResponsibilityTest {
 		
 		LeaveApprover approver = createChain();
 		System.out.println(application);
-		approver.processLeaveApplication(application);
+		approver.processRequest(application);
 		System.out.println(application);
 		assertEquals("PTO leave for 6 day(s) APPROVED by Director", application.toString());
 	}
@@ -76,12 +76,16 @@ class ChainOfResponsibilityTest {
 		
 		LeaveApprover approver = createChain();
 		System.out.println(application);
-		approver.processLeaveApplication(application);
+		approver.processRequest(application);
 		System.out.println(application);
 		assertEquals("SICK leave for 2 day(s) APPROVED by Project Lead", application.toString());
 	}
-	
+	/**
+	 * 
+	 * setup our chain of responsibility
+	 */
 	private static LeaveApprover createChain() {
+		// we provide the successor in constructor
 		Director director = new Director(null);
 		Manager manager = new Manager(director);
 		ProjectLead projectLead = new ProjectLead(manager);
@@ -99,7 +103,7 @@ class ChainOfResponsibilityTest {
 		
 		LeaveApprover approver = createChain();
 		System.out.println(application);
-		approver.processLeaveApplication(application);
+		approver.processRequest(application);
 		System.out.println(application);
 		assertEquals("PTO leave for 9 day(s) REJECTED by Director", application.toString());
 	}

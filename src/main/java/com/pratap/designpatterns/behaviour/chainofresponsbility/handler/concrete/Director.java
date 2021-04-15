@@ -15,7 +15,7 @@ public class Director extends Employee {
 		super("Director", nextApprover);
 	}
 	@Override
-	protected boolean processRequest(LeaveApplication application) {
+	protected boolean processLeaveApplication(LeaveApplication application) {
 
 		if(application.getType() == Type.PTO) {
 			if(application.getNoOfDays() <= 8) {
