@@ -1,6 +1,7 @@
 package com.pratap.designpatterns.behaviour.chainofresponsbility.handler.concrete;
 
 import com.pratap.designpatterns.behaviour.chainofresponsbility.LeaveApplication;
+import com.pratap.designpatterns.behaviour.chainofresponsbility.constants.Type;
 import com.pratap.designpatterns.behaviour.chainofresponsbility.handler.Employee;
 import com.pratap.designpatterns.behaviour.chainofresponsbility.handler.LeaveApprover;
 /**
@@ -14,11 +15,17 @@ public class Director extends Employee {
 		super("Director", nextApprover);
 	}
 	@Override
-	protected boolean processRequest(LeaveApplication application) {
+	protected boolean processLeaveApplication(LeaveApplication application) {
 
-		if(application.getType() == LeaveApplication.Type.PTO) {
-			application.approve(getApprovalRole());
-			return true;
+		if(application.getType() == Type.PTO) {
+			if(application.getNoOfDays() <= 8) {
+				application.approve(getApprovalRole());
+				return true;
+			} else {
+				application.reject(getApprovalRole());
+				return true;
+			}
+			
 		}
 		return false;
 	}

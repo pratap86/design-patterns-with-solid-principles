@@ -2,6 +2,9 @@ package com.pratap.designpatterns.behaviour.chainofresponsbility;
 
 import java.time.LocalDate;
 import java.time.Period;
+
+import com.pratap.designpatterns.behaviour.chainofresponsbility.constants.Status;
+import com.pratap.designpatterns.behaviour.chainofresponsbility.constants.Type;
 /**
  * Represent a request in our chain of responsibility
  * @author Pratap Narayan
@@ -9,10 +12,6 @@ import java.time.Period;
  */
 public class LeaveApplication {
 
-	public enum Type {SICK, PTO, LOP};// PTO - Paid Time Off, LOP - Loss Off Pay
-	
-	public enum Status {PENDING, APPROVED, REJECTED};
-	
 	private Type type;
 	
 	private LocalDate from;
@@ -23,6 +22,12 @@ public class LeaveApplication {
 	
 	private Status status;
 
+	/**
+	 * application initial status would be PENDING.
+	 * @param type
+	 * @param from
+	 * @param to
+	 */
 	private LeaveApplication(Type type, LocalDate from, LocalDate to) {
 		this.type = type;
 		this.from = from;
@@ -56,7 +61,7 @@ public class LeaveApplication {
 
 	/**
 	 * 
-	 * @return total applied leave days(from-date to to-date)
+	 * @return Total applied leave days ie. from-date minus to-date
 	 */
 	public int getNoOfDays() {
 		return Period.between(from, to).getDays();

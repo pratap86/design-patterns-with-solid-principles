@@ -10,7 +10,11 @@ import com.pratap.designpatterns.behaviour.chainofresponsbility.LeaveApplication
  */
 public interface LeaveApprover {
 
-	void processLeaveApplication(LeaveApplication application);
+	/**
+	 * The method to handle the incoming request, leave application
+	 * @param application
+	 */
+	void processRequest(LeaveApplication application);
 	
 	String getApprovalRole();
 }

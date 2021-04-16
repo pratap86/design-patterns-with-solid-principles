@@ -10,7 +10,7 @@ public class Manager extends Employee {
 		super("Manager", nextApprover);
 	}
 	@Override
-	protected boolean processRequest(LeaveApplication application) {
+	protected boolean processLeaveApplication(LeaveApplication application) {
 
 		switch (application.getType()) {
 		
