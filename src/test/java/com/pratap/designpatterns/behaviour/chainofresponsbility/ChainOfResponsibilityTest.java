@@ -16,8 +16,6 @@ import com.pratap.designpatterns.behaviour.chainofresponsbility.handler.concrete
 
 class ChainOfResponsibilityTest {
 
-	
-
 	@Test
 	void testLeaveApplication_approved_by_manager_Leave_Type_SICK() {
 		
