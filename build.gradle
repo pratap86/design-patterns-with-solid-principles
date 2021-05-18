@@ -25,7 +25,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	compileOnly 'org.projectlombok:lombok:'+"${lombookVersion}"
+	implementation group: 'org.apache.commons', name: 'commons-text', version: '1.9'
+  compileOnly 'org.projectlombok:lombok:'+"${lombookVersion}"
 	annotationProcessor 'org.projectlombok:lombok:'+"${lombookVersion}"
 }
 
