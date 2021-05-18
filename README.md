@@ -130,7 +130,10 @@ try(OutputStream os = new BuffuredOutputStream("xyz.txt"))){
 #### Memento
 
 #### Observer
+  - Using Observer design pattern we can notify multiple objects whenever an object changes state
+  - Also known as publisher-subscriber or pub-sub
   - It specifies communication between objects: observable and observers. An observable is an object which notifies observers about the changes in its state.
+  - Observer defining one-to-many dependency between objects, where many objects are listining for state change of single object, withought tightly coupling all of them together(ie with the help of Interface we achieve the loose coupling).
 
 #### State
 
