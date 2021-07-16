@@ -138,6 +138,7 @@ try(OutputStream os = new BuffuredOutputStream("xyz.txt"))){
 #### State
 
 #### Strategy
+<p>Essentially, the strategy pattern allows us to change the behavior of an algorithm at runtime.</p>
 
 #### Template Method
 
