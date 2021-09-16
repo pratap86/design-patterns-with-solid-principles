@@ -118,6 +118,10 @@ try(OutputStream os = new BuffuredOutputStream("xyz.txt"))){
 ### Behavioral Design Patterns
 
 #### Chain of Responsibility
+<p>A design pattern consisting of “a source of command objects and a series of processing objects”. Each processing object in the chain is responsible for a certain type of command, and the processing is done, it forwards the command to the next processor in the chain. The Chain of Responsibility pattern is handy for:<br>
+    Decoupling a sender and receiver of a command and <br>
+    Picking a processing strategy at processing-time
+</p>
 
 #### Command
 
